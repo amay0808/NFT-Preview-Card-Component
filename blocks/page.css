@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    -- Soft-blue: hsl(215, 51%, 70%);
+    -- Cyan: hsl(178, 100%, 50%);
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px ;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%, 60%);
+    padding: 1.25rem;
+}   
+img{
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    font-weight: 300px;
+}
+.atrribution a{
+    font-size: 12px;
+    text-align: center;
+}
+.attribution a{
+    color: hsla(228,45%,44%);
+}
