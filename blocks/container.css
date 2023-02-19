@@ -1,16 +1,80 @@
-.container{
-    padding: 1.25rem;
-    background-color: hsl(216, 50%, 16%);
-    border-radius: 0.5rem;
+.container {
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
-.container h2{
-    color:white;
-    margin: 1rem 0.5rem 0.5rem 0;
+.container .main-image {
+  position: relative;
 }
-.container ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 0;
-    border-bottom: 1px solid var(--line);
+.container .main-image div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.container .main-image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .main-image div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container h2 {
+  color: white;
+  margin: 16px 8px 8px 0;
+}
+.container h2:hover {
+  color: cyan;
+  cursor: pointer;
+}
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-bottom: 1px solid;
+}
+
+.container .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 32px;
+}
+
+.container .avatar img {
+  width: 56px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.container .avatar p span {
+  color: white;
+  font-weight: 400;
+}
+.container .avatar p span:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.container ul li {
+  display: flex;
+  align-items: center;
+}
+
+.container ul li:first-child {
+  color: cyan;
+}
+
+.container ul li img {
+  margin-right: 8px;
 }
