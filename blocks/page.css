@@ -37,9 +37,10 @@ body {
 .attribution a {
   color: hsla(228, 45%, 44%, 1);
 }
+
 @media screen and (min-width: 500px) {
   .container {
     width: 450px;
-    margin: 0 auto 1rem;
+    margin: 0 auto 16px;
   }
 }
